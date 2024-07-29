@@ -15,6 +15,10 @@ export default function List() {
     <>
       <h1>Inspiring sculptors:</h1>
       <ul>
+      setArtists([
+          ...artists,
+          { id: nextId++, name: name }
+        ]);
         {artists.map(artist => (
           <li key={artist.id}>
             {artist.name}{' '}
